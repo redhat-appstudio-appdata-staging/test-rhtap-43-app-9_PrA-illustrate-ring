@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-fdfi
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/test-rhtap-43-tenant/test-rhtap-43-app/devfile-sample-code-with-quarkus-fdfi@sha256:8f2e498d996106f12ed2d1a162ea3d504ac2d00356584c20479d9457cef6c431
+        name: my-java-quarkus
+        resources: {}
+status: {}
